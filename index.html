@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Selamat Datang di auradigital.id</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraDigital - Gradient Page</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(270deg, #f58529, #dd2a7b, #8134af, #515bd4);
+      background-size: 800% 800%;
+      animation: gradientMove 15s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid white;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: rgba(255,255,255,0.3);
+    }
+  </style>
 </head>
 <body>
-  <h1>Jasa Buzzer Digital Indonesia</h1>
-  <p>Kami melayani jasa layanan untuk semua platform sosial media.</p>
+  <div>
+    <h1>Welcome to AuraDigital</h1>
+    <p>Boost your social media presence with real and trusted services. Instagram – TikTok – YouTube – X (Twitter) – and more!</p>
+    <a href="#services" class="button">Explore Services</a>
+  </div>
 </body>
 </html>
